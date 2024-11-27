@@ -28,7 +28,12 @@
                         include('../view/home.php');
                     }
                     
-                    
+                    if ($_GET['page'] == 3 ) {
+                        include('../view/mes_paris.php');
+                    }
+                    if ($_GET['page'] == 4 ) {
+                        include('../view/profil.php');
+                    }
                     
                 }
 
