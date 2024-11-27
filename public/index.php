@@ -9,13 +9,13 @@
     <title>The Real Deal</title>
 </head>
 <body>
-    
+    <?php 
+                    require '../view/header.php';
+                ?> 
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-2 fixed-top p-0">
-                <?php 
-                    include '../view/header.php';
-                ?> 
+                
             </div>
             <div class="col-10 offset-2">
             <?php
