@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le corps couvre toute la hauteur de la fenêtre */
+    margin: 0;
+}
+
+.container-fluid {
+    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+}
+
+footer {
+    background-color: #000; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Force le footer à être à la fin */
+}
+
+/* Style pour les boutons de filtre */
+.filters {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background-color: goldenrod;
+}
+
+#matchs-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Cible les ul et li uniquement dans .match-list */
+.match-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.match-list li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+

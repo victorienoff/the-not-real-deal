@@ -9,39 +9,36 @@
     <title>The Real Deal</title>
 </head>
 <body>
-    <?php 
-                    require '../view/header.php';
-                ?> 
+    <?php require '../view/header.php'; ?>
     <div class="container-fluid p-0">
         <div class="row">
             <div class="col-2 fixed-top p-0">
-                
+                <!-- Sidebar peut être ajouté ici -->
             </div>
             <div class="col-10 offset-2">
-            <?php
-                if (!isset($_GET['page'])) { // Si $_GET['page'] n'existe pas
-                
-                    include('../view/home.php');
-                } else {
-
-                    if ($_GET['page'] == 2 ) {
+                <?php
+                    if (!isset($_GET['page'])) { // Si $_GET['page'] n'existe pas
                         include('../view/home.php');
+                    } else {
+                        if ($_GET['page'] == 2 ) {
+                            include('../view/home.php');
+                        }
+                        if ($_GET['page'] == 3 ) {
+                            include('../view/mes_paris.php');
+                        }
+                        if ($_GET['page'] == 4 ) {
+                            include('../view/profil.php');
+                        }
                     }
-                    
-                    if ($_GET['page'] == 3 ) {
-                        include('../view/mes_paris.php');
-                    }
-                    if ($_GET['page'] == 4 ) {
-                        include('../view/profil.php');
-                    }
-                    
-                }
-
-            ?>
+                ?>
             </div>
         </div>
     </div>
-    <?php include "../public/assets/bootstrap/script.php"?>
 
+    <!-- FOOTER -->
+    <?php include '../view/footer.php'; ?>
+
+    <?php include "../public/assets/bootstrap/script.php"?>
+    <script src="assets/js/script.js"></script> <!-- Inclure le script JS -->
 </body>
 </html>
