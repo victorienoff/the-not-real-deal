@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "assets/bootstrap/link.php"?>
     <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
     <title>The Real Deal</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <?php require '../view/header.php'; ?>
-    <div class="container-fluid p-0">
-        <div class="row">
-            <div class="col-2 fixed-top p-0">
-                <!-- Sidebar peut être ajouté ici -->
-            </div>
-            <div class="col-10 offset-2">
+    <div class="p-0">
+        <div class="">
+            
+            <div class="m-0 p-0">
                 <?php
                     if (!isset($_GET['page'])) { // Si $_GET['page'] n'existe pas
                         include('../view/home.php');
@@ -28,6 +29,12 @@
                         }
                         if ($_GET['page'] == 4 ) {
                             include('../view/profil.php');
+                        }
+                        if ($_GET['page'] == 5 ) {
+                            include('../view/connexion.php');
+                        }
+                        if ($_GET['page'] == 6 ){
+                            include('../view/inscription.php');
                         }
                     }
                 ?>

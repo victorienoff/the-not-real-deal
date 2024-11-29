@@ -1,23 +1,23 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Assure que le corps couvre toute la hauteur de la fenêtre */
+    min-height: 100vh;
     margin: 0;
 }
 
 .container-fluid {
-    flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible */
+    flex: 1; 
 }
 
 footer {
-    background-color: #000; /* Couleur de fond */
-    color: #fff; /* Couleur du texte */
+    background-color: #000; 
+    color: #fff; 
     text-align: center;
     padding: 10px 0;
-    margin-top: auto; /* Force le footer à être à la fin */
+    margin-top: auto;
 }
 
-/* Style pour les boutons de filtre */
+
 .filters {
     text-align: center;
     margin-top: 20px;
@@ -43,7 +43,7 @@ footer {
     text-align: center;
 }
 
-/* Cible les ul et li uniquement dans .match-list */
+
 .match-list ul {
     list-style-type: none;
     padding: 0;
@@ -58,3 +58,70 @@ footer {
 }
 
 
+.navbarstyle {
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+.navbarelement  {
+    margin: 50px;
+    color:rgb(65, 65, 222);
+    font-size: 22px ;
+    font-weight:500;
+}
+.navbarelement:hover {
+     
+    color:white;
+    border-radius:15px;
+}
+
+
+.home-banner {
+    height: 500px;
+    background-image: url(../img/the_real_deal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vignette {
+    height: 500px;
+    
+    background-color: rgb(103, 103, 103);
+    border-radius:35px;
+}
+
+.signupcard {
+    background-color: #071013;
+    border:0px;
+}
+.bgimg {
+    background-image: url("../img/signupimg.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contrail-one-regular {
+    font-family: "Contrail One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1px;
+  }
+
+  .btnco{
+    text-decoration: none;
+    color:white;
+    border-radius:15px;
+    padding:15px 25px;
+    background-color:#2461CC;
+  }
+  .btnco:hover {
+    background-color:white;
+    color:#2461CC;
+    transition: 0.2s ease-in-out ;
+  }
+
+  .h500 {
+    height: 475px;
+  }
+  

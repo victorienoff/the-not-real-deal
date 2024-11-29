@@ -1,3 +1,44 @@
+<div class="p-0 m-0 container-fluid bg-black home-banner">
+
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <h1>Les actualités du jour</h1>
+        <div class="col-9 vignette mt-5">
+            <div class="row mt-2">
+                <div class="col-5 bgimg h500" >
+                     test 
+                </div>
+                <div class="col-7">
+                     <div class="row">
+                        <div class="x mt-5" >
+                            <div class="row">
+                                <div class="col-6">
+                                <h5>Ruben Amorim backed to re-sign one of Erik ten Hag's final Man Utd transfer targets</h5>
+                                
+                                Lee Sharpe has urged Manchester United boss Ruben Amorim to consider 
+                                bringing Danny Welbeck back to Old Trafford after Erik ten </div>
+                                <div class="col-6">
+                                    <img class="img-fluid" src="assets/img/joueurfoot.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                        
+                     </div>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="mt-5 container">
 <?php
 $apiKey = '047183c7559548c0aba6c4fbbecd6db8';
 $apiUrl = 'https://api.football-data.org/v4/competitions/CL/matches';
@@ -96,3 +137,4 @@ if (isset($matches['matches'])) {
     echo 'Aucun match trouvé.';
 }
 ?>
+</div>
